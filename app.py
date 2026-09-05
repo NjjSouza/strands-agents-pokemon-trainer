@@ -233,14 +233,21 @@ EEVEELUTIONS = {
         "tipo": "dark",
         "emoji": "🌙",
         "titulo": "Guardião Noturno & Muralha Defensiva",
+        "titulo_en": "Night Guardian & Defensive Wall",
         "tom": "sereno, calmo, misterioso e estratégico, transmitindo confiança nas defesas inabaláveis e nas táticas de paciência",
         "especialidade": (
             "tanque defensivo de elite (HP alto, excelentes defesas física e especial), "
             "suporte tático com Wish, Moonlight, Foul Play para punir atacantes físicos, "
             "e controle de ritmo com Synchronize ou Inner Focus"
         ),
+        "especialidade_en": (
+            "elite defensive tank (high HP, top physical and special defenses), "
+            "tactical support with Wish, Moonlight, Foul Play to punish physical attackers, "
+            "and pace control with Synchronize or Inner Focus"
+        ),
         "pergunta_demo": "Busque as fraquezas do tipo dark e os dados da habilidade Synchronize para traçarmos a defesa do Umbreon.",
         "despedida": "Que a suave luz da lua guie seus passos nas sombras, Treinador!",
+        "despedida_en": "May the soft moonlight guide your steps in the shadows, Trainer!",
         "art": ART_UMBREON,
     },
     "2": {
@@ -248,13 +255,19 @@ EEVEELUTIONS = {
         "tipo": "water",
         "emoji": "💧",
         "titulo": "Oásis Resiliente & Suporte Fluido",
+        "titulo_en": "Resilient Oasis & Fluid Support",
         "tom": "tranquilo, acolhedor e adaptável, como águas calmas e profundas",
         "especialidade": (
             "tanque de HP colossal, cura de companheiros via Wish, absorção de água "
             "(Water Absorb), Acid Armor e controle de campo com Scald e Haze"
         ),
+        "especialidade_en": (
+            "colossal HP tank, teammate healing via Wish, water absorption "
+            "(Water Absorb), Acid Armor, and field control with Scald and Haze"
+        ),
         "pergunta_demo": "Busque os dados do Vaporeon e as fraquezas do tipo water para entender seu papel defensivo.",
         "despedida": "Que a calmaria e a fluidez das águas acompanhem suas batalhas!",
+        "despedida_en": "May the calm and fluid tides accompany your battles, Trainer!",
         "art": ART_VAPOREON,
     },
     "3": {
@@ -262,13 +275,19 @@ EEVEELUTIONS = {
         "tipo": "electric",
         "emoji": "⚡",
         "titulo": "Raio Veloz & Pivot Eletrizante",
+        "titulo_en": "Swift Lightning & Electric Pivot",
         "tom": "elétrico, ágil, direto, entusiasmado e focado em ritmo acelerado",
         "especialidade": (
             "velocidade estrondosa, pivots táticos rápidos com Volt Switch, pressão com Thunderbolt "
             "e cobertura de surpresa com Shadow Ball para atacar antes do oponente reagir"
         ),
+        "especialidade_en": (
+            "blistering speed, fast tactical pivots with Volt Switch, pressure with Thunderbolt, "
+            "and surprise coverage with Shadow Ball to strike before opponents react"
+        ),
         "pergunta_demo": "Busque os detalhes do movimento 'volt-switch' e analise como ele potencializa a velocidade do Jolteon.",
         "despedida": "Mantenha seus reflexos afiados e seja sempre mais rápido que o raio!",
+        "despedida_en": "Keep your reflexes sharp and always move faster than lightning!",
         "art": ART_JOLTEON,
     },
     "4": {
@@ -276,13 +295,19 @@ EEVEELUTIONS = {
         "tipo": "fire",
         "emoji": "🔥",
         "titulo": "Chama Ardente & Impacto Físico Devastador",
+        "titulo_en": "Blazing Flame & Heavy Physical Impact",
         "tom": "caloroso, vigoroso, motivador e focado em poder ofensivo bruto",
         "especialidade": (
             "ataque físico monstruoso (Base 130), combos com a habilidade Guts e Flame Orb, "
             "Flare Blitz, Facade e Trailblaze para surpreender na velocidade"
         ),
+        "especialidade_en": (
+            "monstrous physical attack (Base 130), Guts ability combos with Flame Orb, "
+            "Flare Blitz, Facade, and Trailblaze to surprise opponents with speed"
+        ),
         "pergunta_demo": "Busque os dados da habilidade 'guts' e do movimento 'flare-blitz' para montarmos um Flareon de alto impacto.",
         "despedida": "Mantenha a chama da paixão pelas batalhas sempre acesa em seu coração!",
+        "despedida_en": "Keep the fire of passion for battles always burning in your heart!",
         "art": ART_FLAREON,
     },
     "5": {
@@ -290,13 +315,19 @@ EEVEELUTIONS = {
         "tipo": "psychic",
         "emoji": "🔮",
         "titulo": "Oráculo da Presciência & Magic Bounce",
+        "titulo_en": "Oracle of Foresight & Magic Bounce",
         "tom": "místico, elegante, analítico e focado em antecipar as intenções do oponente",
         "especialidade": (
             "habilidade Magic Bounce (refletindo Stealth Rock, Spikes, Taunt e status), "
             "dano especial expressivo com Psychic e Psyshock, e setups com Calm Mind"
         ),
+        "especialidade_en": (
+            "Magic Bounce ability (reflecting entry hazards, Taunt, and status moves), "
+            "formidable special damage with Psychic and Psyshock, and setups with Calm Mind"
+        ),
         "pergunta_demo": "Busque os detalhes da habilidade 'magic-bounce' e me diga como o Espeon neutraliza armadilhas de entrada.",
         "despedida": "O futuro pertence àqueles que sabem ler os sinais antes do confronto!",
+        "despedida_en": "The future belongs to those who foresee the battlefield before the clash!",
         "art": ART_ESPEON,
     },
     "6": {
@@ -304,13 +335,19 @@ EEVEELUTIONS = {
         "tipo": "grass",
         "emoji": "🍃",
         "titulo": "Lâmina Verde & Agilidade Sob o Sol",
+        "titulo_en": "Verdant Blade & Solar Agility",
         "tom": "harmonioso, preciso, focado na natureza e em cortes limpos e estratégicos",
         "especialidade": (
             "altíssima defesa física, velocidade dobrada no sol com Chlorophyll, "
             "danos críticos com Leaf Blade e capacidade de setup rápido com Swords Dance"
         ),
+        "especialidade_en": (
+            "colossal physical defense, doubled speed in sunlight with Chlorophyll, "
+            "high critical-hit rate with Leaf Blade, and setup capability with Swords Dance"
+        ),
         "pergunta_demo": "Busque a cadeia de evolução do 'eevee' para ver a evolução do Leafeon e os dados do movimento 'leaf-blade'.",
         "despedida": "Que a vitalidade e a força da natureza floresçam em cada jogada sua!",
+        "despedida_en": "May the vitality and strength of nature flourish in your battle strategy!",
         "art": ART_LEAFEON,
     },
     "7": {
@@ -318,13 +355,19 @@ EEVEELUTIONS = {
         "tipo": "ice",
         "emoji": "❄️",
         "titulo": "Fortaleza Glacial & Precisão Congelante",
+        "titulo_en": "Glacial Fortress & Freezing Precision",
         "tom": "frio, calculista, elegante e extremamente disciplinado",
         "especialidade": (
             "Special Attack altíssimo, poder devastador de Blizzard (especialmente com Snowscape), "
             "e bônus de defesa sob a neve com Snow Cloak ou Ice Body"
         ),
+        "especialidade_en": (
+            "sky-high Special Attack, devastating Blizzard power under snow/hail, "
+            "and defense boosts under snow weather with Snow Cloak or Ice Body"
+        ),
         "pergunta_demo": "Busque os detalhes do movimento 'blizzard' e as relações de dano do tipo 'ice' para o Glaceon.",
         "despedida": "Mantenha o sangue frio e o foco congelante até o último turno!",
+        "despedida_en": "Keep a cold head and freezing focus until the final turn!",
         "art": ART_GLACEON,
     },
     "8": {
@@ -332,13 +375,19 @@ EEVEELUTIONS = {
         "tipo": "fairy",
         "emoji": "🎀",
         "titulo": "Voz Celestial & Laços Encantados",
+        "titulo_en": "Celestial Voice & Enchanted Bonds",
         "tom": "afetuoso, carismático, porém firme e confiante no poder dos laços afetivos",
         "especialidade": (
             "habilidade Pixilate convertendo Hyper Voice em ataque Fairy devastador que ultrapassa Substitutes, "
             "alta Special Defense e suporte com Heal Bell e Wish"
         ),
+        "especialidade_en": (
+            "Pixilate ability converting Hyper Voice into devastating Fairy attacks bypassing Substitutes, "
+            "high Special Defense, and team support with Heal Bell and Wish"
+        ),
         "pergunta_demo": "Busque os dados da habilidade 'pixilate' e explique como ela transforma ataques normais no Sylveon.",
         "despedida": "Batalhe sempre com o coração, elegância e laços inquebráveis!",
+        "despedida_en": "Battle always with heart, elegance, and unbreakable bonds!",
         "art": ART_SYLVEON,
     }
 }
@@ -353,17 +402,45 @@ TOOLS_DISPONIVEIS = [
 ]
 
 
-def criar_prompt_de_sistema(dados_eevee: dict) -> str:
+def obter_textos_eevee(dados_eevee: dict, lang: str = "pt") -> tuple[str, str, str]:
+    """Retorna (titulo, especialidade, despedida) no idioma configurado (pt ou en)."""
+    if lang == "en":
+        return (
+            dados_eevee.get("titulo_en", dados_eevee["titulo"]),
+            dados_eevee.get("especialidade_en", dados_eevee["especialidade"]),
+            dados_eevee.get("despedida_en", dados_eevee["despedida"]),
+        )
+    return (dados_eevee["titulo"], dados_eevee["especialidade"], dados_eevee["despedida"])
+
+
+def criar_prompt_de_sistema(dados_eevee: dict, lang: str = "pt") -> str:
     """Gera o prompt de sistema com ferramentas da PokeAPI, memória persistente e tom da Eeveelution."""
+    titulo, especialidade, _ = obter_textos_eevee(dados_eevee, lang)
+
+    instrucao_idioma = (
+        "3. Always respond in English, in a clear, educational, dynamic and inspiring way."
+        if lang == "en"
+        else "3. Responder sempre em Português Brasileiro, de forma didática, dinâmica e inspiradora."
+    )
+
+    intro = (
+        f"You are an expert Pokemon battle strategist agent and loyal battle counselor.\n"
+        f"The trainer has chosen as honor partner the Eeveelution: {dados_eevee['nome'].upper()} (type: {dados_eevee['tipo']}).\n"
+        f"Tone: {dados_eevee['tom']}.\n"
+        f"Specialty: {especialidade}."
+        if lang == "en"
+        else
+        f"Você é um agente estrategista Pokémon especialista e conselheiro leal de batalha.\n"
+        f"O treinador que você assessora escolheu como parceiro de honra e foco absoluto a Eeveelution: {dados_eevee['nome'].upper()} (tipo: {dados_eevee['tipo']}).\n"
+        f"Você atua com o tom {dados_eevee['tom']}.\n"
+        f"Sobre o parceiro ativo ({dados_eevee['nome']}):\n"
+        f"- Especialidade e função: {especialidade}."
+    )
+
     return f"""
-Você é um agente estrategista Pokémon especialista e conselheiro leal de batalha.
-O treinador que você assessora escolheu como parceiro de honra e foco absoluto a Eeveelution: {dados_eevee['nome'].upper()} (tipo: {dados_eevee['tipo']}).
-Você atua com o tom {dados_eevee['tom']}.
+{intro}
 
-Sobre o parceiro ativo ({dados_eevee['nome']}):
-- Especialidade e função: {dados_eevee['especialidade']}.
-
-REGRAS OBRIGATÓRIAS:
+REGRAS OBRIGATÓRIAS / MANDATORY RULES:
 - Você NÃO possui conhecimento prévio memorizado sobre dados técnicos de Pokémon. Toda informação DEVE vir das ferramentas.
 - SEMPRE use as ferramentas ANTES de responder qualquer pergunta técnica ou formular cálculos de batalha.
 - Passe nomes e termos em inglês para as ferramentas quando aplicável (ex: nomes de movimentos como 'moonlight', 'foul-play'; tipos como 'dark', 'fairy'; naturezas como 'calm', 'bold').
@@ -385,25 +462,47 @@ MEMÓRIA DE CONVERSAÇÃO (PASSO 5):
 SEUS OBJETIVOS:
 1. Usar as ferramentas apropriadas para embasar todas as suas análises competitivas.
 2. Identificar fortalezas, fraquezas e coberturas valorizando as qualidades de {dados_eevee['nome']} e o time de Eeveelutions.
-3. Responder sempre em Português Brasileiro, de forma didática, dinâmica e inspiradora.
+{instrucao_idioma}
 4. Manter as respostas concisas (no máximo 2 a 3 parágrafos por turno).
-5. Enriquecer as análises utilizando emojis temáticos de Pokémon e combate (incluindo o seu emoji {dados_eevee['emoji']}, ⚔️, 🛡️, etc.) para tornar a leitura mais visual e cativante.
+5. Enriquecer as análises utilizando apenas o emoji temático da sua Eeveelution ({dados_eevee['emoji']}) para identificação, evitando outros emojis genéricos.
 """
 
 
-def escolher_eeveelution() -> dict:
+def escolher_idioma() -> str:
+    """Permite ao usuário escolher o idioma da sessão no terminal."""
+    print("\n" + "=" * 70)
+    print("🌐 LANGUAGE / IDIOMA")
+    print("=" * 70)
+    print("  [1] 🇧🇷 Português")
+    print("  [2] 🇺🇸 English")
+    print("-" * 70)
+    escolha = input("Select language / Escolha seu idioma [Default: 1 - PT]: ").strip().lower()
+    if escolha in ("2", "en", "english", "ingles", "inglês"):
+        return "en"
+    return "pt"
+
+
+def escolher_eeveelution(lang: str = "pt") -> dict:
     """Apresenta o menu para o usuário selecionar qual Eeveelution estará em foco."""
     print("\n" + "=" * 70)
-    print("🐾 CENTRO TÁTICO EEVEELUTIONS - SELEÇÃO DE PARCEIRO 🐾")
-    print("=" * 70)
-    print("Escolha qual Eeveelution será o foco da sua estratégia hoje:\n")
+    if lang == "en":
+        print("🐾 EEVEELUTION TACTICAL CENTER - SELECT YOUR PARTNER 🐾")
+        print("=" * 70)
+        print("Commands available: 'menu' | 'art' | 'switch' | 'lang' | 'help' | 'exit'\n")
+        print("Select your partner (number 1-8 or name):\n")
+    else:
+        print("🐾 CENTRO TÁTICO EEVEELUTIONS - SELEÇÃO DE PARCEIRO 🐾")
+        print("=" * 70)
+        print("Comandos disponíveis: 'menu' | 'art' | 'switch' | 'lang' | 'help' | 'exit'\n")
+        print("Escolha seu parceiro (número 1-8 ou nome):\n")
 
     for key, info in EEVEELUTIONS.items():
-        destaque = " (⭐ Favorito deste usuário)" if info["nome"] == "Umbreon" else ""
-        print(f"  [{key}] {info['emoji']} {info['nome']} ({info['tipo'].title()}) - {info['titulo']}{destaque}")
+        titulo, _, _ = obter_textos_eevee(info, lang)
+        print(f"  [{key}] {info['emoji']} {info['nome']} ({info['tipo'].title()}) - {titulo}")
 
     print("\n" + "-" * 70)
-    escolha = input("Digite o número (1-8) ou nome [Padrão: 1 - Umbreon]: ").strip().lower()
+    prompt_txt = "Select partner [Default: 1 - Umbreon]: " if lang == "en" else "Escolha seu parceiro [Padrão: 1 - Umbreon]: "
+    escolha = input(prompt_txt).strip().lower()
 
     for key, info in EEVEELUTIONS.items():
         if escolha == key or escolha == info["nome"].lower():
@@ -412,12 +511,12 @@ def escolher_eeveelution() -> dict:
     return EEVEELUTIONS["1"]
 
 
-def instanciar_agente(dados_eevee: dict) -> Agent:
+def instanciar_agente(dados_eevee: dict, lang: str = "pt") -> Agent:
     """Cria e retorna o agente configurado com modelo, prompt, ferramentas e memória de sessão."""
-    system_prompt = criar_prompt_de_sistema(dados_eevee)
+    system_prompt = criar_prompt_de_sistema(dados_eevee, lang=lang)
 
     # Cada Eeveelution possui seu próprio histórico de memória persistente
-    session_id = f"chat_{dados_eevee['nome'].lower()}"
+    session_id = f"chat_{dados_eevee['nome'].lower()}_{lang}"
     session_manager = FileSessionManager(
         session_id=session_id,
         storage_dir="./sessions",
@@ -432,71 +531,113 @@ def instanciar_agente(dados_eevee: dict) -> Agent:
     )
 
 
-def exibir_badge_resposta(dados_eevee: dict):
+def exibir_badge_resposta(dados_eevee: dict, lang: str = "pt"):
     """Exibe o avatar Braille e cabeçalho temático no momento da resposta do parceiro."""
+    titulo, _, _ = obter_textos_eevee(dados_eevee, lang)
+    rotulo = "Strategist" if lang == "en" else "Estrategista"
     print("\n" + "─" * 60)
-    print(f"{dados_eevee['emoji']}  {dados_eevee['nome'].upper()} ── {dados_eevee['titulo']}")
+    print(f"{dados_eevee['emoji']}  {dados_eevee['nome'].upper()} ── {titulo}")
     print("─" * 60)
     print(dados_eevee["art"])
     print("─" * 60)
-    print(f"🐾 Estrategista ({dados_eevee['nome']}): ", end="", flush=True)
+    print(f"{dados_eevee['emoji']} {rotulo} ({dados_eevee['nome']}): ", end="", flush=True)
 
 
 def main():
-    dados_eevee = escolher_eeveelution()
+    lang = escolher_idioma()
+    dados_eevee = escolher_eeveelution(lang=lang)
     nome = dados_eevee["nome"]
     emoji = dados_eevee["emoji"]
+    titulo, especialidade, _ = obter_textos_eevee(dados_eevee, lang)
 
-    agente = instanciar_agente(dados_eevee)
+    agente = instanciar_agente(dados_eevee, lang=lang)
 
     print("\n" + "=" * 70)
-    print(f"{emoji} PARCEIRO INVOCADO: {nome.upper()} ({dados_eevee['tipo'].title()}) {emoji}")
-    print(f"Título: {dados_eevee['titulo']}")
-    print("Comandos: 'sair' para encerrar | 'trocar' para mudar de parceiro | 'arte' para rever a arte")
+    rotulo_parceiro = "PARTNER" if lang == "en" else "PARCEIRO ATIVO"
+    print(f"{emoji} {rotulo_parceiro}: {nome.upper()} ({dados_eevee['tipo'].title()}) {emoji}")
+    print(f"Title: {titulo}")
+    print(f"Specialty: {especialidade}")
+    print("Commands: 'exit' | 'switch' | 'lang' | 'art' | 'menu' | 'help'")
     print("=" * 70)
 
     # Exibe a arte de entrada do Pokémon escolhido
     print("\n" + dados_eevee["art"] + "\n")
 
     # Demonstração contextualizada inicial
-    pergunta_inicial = dados_eevee["pergunta_demo"]
-    print(f"{emoji} Treinador: {pergunta_inicial}")
-    exibir_badge_resposta(dados_eevee)
+    pergunta_inicial = (
+        f"Fetch data for {dados_eevee['nome']} and analyze its defensive and offensive capabilities."
+        if lang == "en"
+        else dados_eevee["pergunta_demo"]
+    )
+    rotulo_treinador = "Trainer" if lang == "en" else "Treinador"
+    print(f"{emoji} {rotulo_treinador}: {pergunta_inicial}")
+    exibir_badge_resposta(dados_eevee, lang=lang)
     agente(pergunta_inicial)
     print("\n\n" + "=" * 70 + "\n")
 
     # Loop de conversação interativa
     while True:
         try:
-            pergunta = input(f"{emoji} Treinador: ")
+            pergunta = input(f"{emoji} {rotulo_treinador}: ")
         except (KeyboardInterrupt, EOFError):
-            print(f"\n{dados_eevee['despedida']}")
+            _, _, despedida = obter_textos_eevee(dados_eevee, lang)
+            print(f"\n{despedida}")
             break
 
         pergunta_limpa = pergunta.strip().lower()
 
-        if pergunta_limpa in ("sair", "exit", "quit"):
-            print(dados_eevee["despedida"])
+        if pergunta_limpa in ("exit", "quit", "sair"):
+            _, _, despedida = obter_textos_eevee(dados_eevee, lang)
+            print(despedida)
             break
 
-        if pergunta_limpa in ("arte", "art", "desenho"):
+        if pergunta_limpa in ("art", "arte", "desenho"):
             print("\n" + dados_eevee["art"] + "\n")
             continue
 
-        if pergunta_limpa in ("trocar", "switch", "mudar"):
-            dados_eevee = escolher_eeveelution()
+        if pergunta_limpa in ("lang", "idioma"):
+            lang = escolher_idioma()
+            titulo, especialidade, _ = obter_textos_eevee(dados_eevee, lang)
+            rotulo_treinador = "Trainer" if lang == "en" else "Treinador"
+            agente = instanciar_agente(dados_eevee, lang=lang)
+            confirm = "✅ Language set to English!" if lang == "en" else "✅ Idioma alterado para Português!"
+            print(f"\n{confirm}\n")
+            continue
+
+        if pergunta_limpa in ("switch", "menu", "trocar", "mudar"):
+            dados_eevee = escolher_eeveelution(lang=lang)
             emoji = dados_eevee["emoji"]
             nome = dados_eevee["nome"]
-            agente = instanciar_agente(dados_eevee)
-            print(f"\n{emoji} Agora o foco estratégico está em {nome.upper()}! {emoji}\n")
+            titulo, especialidade, _ = obter_textos_eevee(dados_eevee, lang)
+            agente = instanciar_agente(dados_eevee, lang=lang)
+            print(f"\n{emoji} Active partner: {nome.upper()}! {emoji}")
+            print(f"Title: {titulo}")
+            print(f"Specialty: {especialidade}\n")
             print(dados_eevee["art"] + "\n")
+            continue
+
+        if pergunta_limpa in ("help", "ajuda"):
+            if lang == "en":
+                print("\nCommands available:")
+                print("  menu / switch - Select a different Eeveelution partner")
+                print("  lang          - Change language (PT / EN)")
+                print("  art           - Display current partner Braille art")
+                print("  help          - Show this command help")
+                print("  exit          - Exit the session\n")
+            else:
+                print("\nComandos disponíveis:")
+                print("  menu / switch - Selecionar outra Eeveelution parceira")
+                print("  lang          - Alterar idioma (PT / EN)")
+                print("  art           - Exibir a arte em Braille do parceiro")
+                print("  help          - Exibir esta ajuda de comandos")
+                print("  exit          - Encerrar a sessão\n")
             continue
 
         if not pergunta.strip():
             continue
 
         # Exibe o card/avatar Braille antes da resposta estratégica da Eeveelution
-        exibir_badge_resposta(dados_eevee)
+        exibir_badge_resposta(dados_eevee, lang=lang)
         agente(pergunta)
         print("\n")
 
