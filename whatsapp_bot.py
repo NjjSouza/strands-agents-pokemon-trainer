@@ -452,7 +452,7 @@ async def pagina_inicial(request: Request) -> Response:
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0b141a; color: #e9edef; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 20px; }
-        .container { width: 100%; max-width: 620px; background: #111b21; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: flex; flex-direction: column; height: 90vh; }
+        .container { width: 100%; max-width: 720px; background: #111b21; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); display: flex; flex-direction: column; height: 90vh; }
         .header { background: #202c33; padding: 14px 16px; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid #222d34; }
         .header-icons { font-size: 1.15rem; letter-spacing: 2px; }
         .header h1 { font-size: 1.05rem; color: #00a884; font-weight: 600; }
@@ -460,9 +460,15 @@ async def pagina_inicial(request: Request) -> Response:
         .btn-reset:hover { background: #ba1a1a; color: #fff; border-color: #ff5252; }
         .chat-box { flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; background: #0b141a; background-image: radial-gradient(#202c33 1px, transparent 1px); background-size: 16px 16px; }
         .bubble { max-width: 85%; padding: 10px 14px; border-radius: 8px; font-size: 0.95rem; line-height: 1.4; word-break: break-word; white-space: pre-wrap; }
-        .bubble.braille-art { font-family: "Consolas", "Courier New", monospace; line-height: 1.15; font-size: 0.82rem; }
         .bubble.bot { background: #202c33; color: #e9edef; align-self: flex-start; border-top-left-radius: 0; }
+        .bubble.bot.has-art { max-width: 95%; }
         .bubble.user { background: #005c4b; color: #e9edef; align-self: flex-end; border-top-right-radius: 0; }
+        .wa-braille { display: block; font-family: "Consolas", "Courier New", monospace; line-height: 1.12; letter-spacing: 0; white-space: pre; overflow-x: auto; margin: 8px 0; padding: 2px 0; background: transparent; border: none; color: #e9edef; }
+        .wa-braille.scale-normal { font-size: 0.82rem; }
+        .wa-braille.scale-compact { font-size: 0.65rem; }
+        .wa-braille.scale-micro { font-size: 0.52rem; }
+        .wa-braille::-webkit-scrollbar { height: 4px; }
+        .wa-braille::-webkit-scrollbar-thumb { background: #2a3942; border-radius: 2px; }
         b, strong { font-weight: 700; color: #ffffff; }
         i, em { font-style: italic; color: #b5c3cb; }
         s, del { text-decoration: line-through; opacity: 0.8; }
@@ -523,24 +529,63 @@ _Digite 1 (ou PT) para Português / Type 2 (or EN) for English._</div>
         }
 
         function formatarWhatsApp(texto) {
-            let html = escapeHTML(texto);
+            if (!texto) return '';
 
-            // 1. Bloco de código: ```código```
-            html = html.replace(/```([\s\S]*?)```/g, '<pre class="wa-code"><code>$1</code></pre>');
+            // 1. Isolar e proteger blocos de código com crases triplas: ```código```
+            const blocosCodigo = [];
+            let textoProtegido = texto.replace(/```([\s\S]*?)```/g, (match, codigo) => {
+                const idx = blocosCodigo.length;
+                blocosCodigo.push(`<pre class="wa-code"><code>${escapeHTML(codigo)}</code></pre>`);
+                return `___CODE_BLOCK_${idx}___`;
+            });
 
-            // 2. Código inline: `código`
-            html = html.replace(/`([^`\n]+)`/g, '<code class="wa-inline-code">$1</code>');
+            // 2. Agrupar linhas consecutivas de arte Braille em bloco próprio com escala adaptada
+            const linhas = textoProtegido.split('\n');
+            const resultadoLinhas = [];
+            let blocoBraille = [];
+            let maxColunas = 0;
 
-            // 3. Negrito: *texto*
-            html = html.replace(/(^|[\s(>])\*([^*\n]+?)\*(?=[\s)<.,;:!?]|$)/g, '$1<b>$2</b>');
+            function despejarBraille() {
+                if (blocoBraille.length > 0) {
+                    let classeEscala = 'scale-normal';
+                    if (maxColunas > 60) {
+                        classeEscala = 'scale-micro';
+                    } else if (maxColunas > 42) {
+                        classeEscala = 'scale-compact';
+                    }
+                    resultadoLinhas.push(`<pre class="wa-braille ${classeEscala}"><code>${blocoBraille.join('\n')}</code></pre>`);
+                    blocoBraille = [];
+                    maxColunas = 0;
+                }
+            }
 
-            // 4. Itálico: _texto_
-            html = html.replace(/(^|[\s(>])_([^_\n]+?)_(?=[\s)<.,;:!?]|$)/g, '$1<i>$2</i>');
+            for (const linha of linhas) {
+                if (/[\u2800-\u28FF]/.test(linha)) {
+                    blocoBraille.push(escapeHTML(linha));
+                    if (linha.length > maxColunas) maxColunas = linha.length;
+                } else {
+                    despejarBraille();
+                    let htmlLinha = escapeHTML(linha);
 
-            // 5. Tachado: ~texto~
-            html = html.replace(/(^|[\s(>])~([^~\n]+?)~(?=[\s)<.,;:!?]|$)/g, '$1<s>$2</s>');
+                    // Formatação inline do WhatsApp
+                    htmlLinha = htmlLinha.replace(/`([^`\n]+)`/g, '<code class="wa-inline-code">$1</code>');
+                    htmlLinha = htmlLinha.replace(/(^|[\s(>])\*([^*\n]+?)\*(?=[\s)<.,;:!?]|$)/g, '$1<b>$2</b>');
+                    htmlLinha = htmlLinha.replace(/(^|[\s(>])_([^_\n]+?)_(?=[\s)<.,;:!?]|$)/g, '$1<i>$2</i>');
+                    htmlLinha = htmlLinha.replace(/(^|[\s(>])~([^~\n]+?)~(?=[\s)<.,;:!?]|$)/g, '$1<s>$2</s>');
 
-            return html;
+                    resultadoLinhas.push(htmlLinha);
+                }
+            }
+            despejarBraille();
+
+            let htmlFinal = resultadoLinhas.join('\n');
+
+            // 3. Restaurar blocos de código
+            blocosCodigo.forEach((bloco, idx) => {
+                htmlFinal = htmlFinal.replace(`___CODE_BLOCK_${idx}___`, bloco);
+            });
+
+            return htmlFinal;
         }
 
         async function enviarMensagem(e) {
@@ -606,7 +651,7 @@ _Digite 1 (ou PT) para Português / Type 2 (or EN) for English._</div>
             const div = document.createElement('div');
             div.className = `bubble ${tipo}`;
             if (/[\u2800-\u28FF]/.test(texto)) {
-                div.classList.add('braille-art');
+                div.classList.add('has-art');
             }
             div.innerHTML = formatarWhatsApp(texto);
             chat.appendChild(div);

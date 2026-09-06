@@ -219,3 +219,6 @@ __marimo__/
 
 
 sessions/*
+
+# JetBrains IDEs
+.idea/
